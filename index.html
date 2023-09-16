@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/27bd347b7d.js" crossorigin="anonymous"></script>
+    <title>FriendBook</title>
+    
+</head>
+<body>
+   <nav>
+    <div class="nav-left">
+        <a href="index.html"><img src="images/logo.png" alt="" class="logo"></a>
+        <ul>
+            <li><img src="images/notification.png" alt=""></li>
+            <li><img src="images/inbox.png" alt=""></li>
+            <li><img src="images/video.png" alt=""></li>
+        </ul>
+    </div>
+    <div class="nav-right">
+        <div class="search-box">
+            <img src="images/search.png" alt="">
+            <input type="text" placeholder="Search">
+        </div>
+        <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+            <img src="images/profile-pic.png" >
+        </div>
+    </div>
+
+    <!-- --------------------------Settings me----------------------- -->
+    <div class="settings-menu">
+        <div id="dark-btn">
+            <span></span>
+        </div>
+        <div class="settings-menu-inner">
+            <div class="user-profile">
+                <img src="images/profile-pic.png" alt="">
+                <div>
+                    <p>Alision</p>
+                    <a href="profile.html">See Your Profile</a>
+                </div>
+            </div>
+            <hr>
+            <div class="user-profile">
+                <img src="images/feedback.png" alt="">
+                <div>
+                    <p>Give Feedback</p>
+                    <a href="#">Help us to improve the design</a>
+                </div>
+            </div>
+            <hr>
+            <div class="settings-links">
+                <img src="images/setting.png" alt="" class="settings-icon">
+                <a href="#">Settings & Privacy <img src="images/arrow.png" alt="" width="10px"></a>
+            </div><div class="settings-links">
+                <img src="images/help.png" alt="" class="settings-icon">
+                <a href="#">Help & Support <img src="images/arrow.png" alt="" width="10px"></a>
+            </div>
+            <div class="settings-links">
+                <img src="images/display.png" alt="" class="settings-icon">
+                <a href="#">Display & Accessibility <img src="images/arrow.png" alt="" width="10px"></a>
+            </div>
+            <div class="settings-links">
+                <img src="images/logout.png" alt="" class="settings-icon">
+                <a href="#">Logout<img src="images/arrow.png" alt="" width="10px"></a>
+            </div>
+
+        </div>
+    </div>
+   </nav>
+   <div class="container">
+    <div class="left-sidebar">
+        <div class="imp-links">
+            <a href="#"><img src="images/news.png" alt="">Latest News</a>
+            <a href="#"><img src="images/friends.png" alt="">Friends</a>
+            <a href="#"><img src="images/group.png" alt="">Group</a>
+            <a href="#"><img src="images/marketplace.png" alt="">Marketplace</a>
+            <a href="#"><img src="images/watch.png" alt="">watch</a>
+            <a href="#">See more</a>
+        </div>
+        <div class="shortcut-links">
+            <p>Your Shortcuts</p>
+            <a href="#"><img src="images/shortcut-1.png" alt="">Web Developers</a>
+            <a href="#"><img src="images/shortcut-2.png" alt="">Web Designer</a>
+            <a href="#"><img src="images/shortcut-3.png" alt="">Full Stack Development</a>
+            <a href="#"><img src="images/shortcut-4.png" alt="">Web Experts</a>
+
+        </div>
+    </div>
+
+
+
+
+    <div class="main-content">
+        <div class="story-gallery">
+            <div class="story story1">
+                <img src="images/upload.png" alt="">
+                <p>Post Story</p>
+            </div>
+            <div class="story story2">
+                <img src="images/member-1.png" alt="">
+                <p>Marry</p>
+            </div>
+            <div class="story story3">
+                <img src="images/member-2.png" alt="">
+                <p>Alison</p>
+            </div>
+            <div class="story story4">
+                <img src="images/member-3.png" alt="">
+                <p>Margrate</p>
+            </div>
+            <div class="story story5">
+                <img src="images/member-4.png" alt="">
+                <p>Harry</p>
+            </div>
+        </div>
+        <div class="write-post-container">
+            <div class="user-profile">
+                <img src="images/profile-pic.png" alt="">
+                <div>
+                    <p>Alision</p>
+                    <small>Public <i class="fa-solid fa-sort-down"></i></small>
+                </div>
+            </div>
+            <div class="post-input-container">
+                <textarea rows="4" placeholder="What's on your mind, Alision?"></textarea>
+                <div class="add-post-links">
+                    <a href="#"><img src="images/live-video.png" alt="">Live Video</a>
+                    <a href="#"><img src="images/photo.png" alt="">Photo/Video</a>
+                    <a href="#"><img src="images/feeling.png" alt="">Feeling/Activity</a>
+                </div>
+            </div>
+        </div>
+        <div class="post-container">
+           <div class="post-row">
+            <div class="user-profile">
+                <img src="images/profile-pic.png" alt="">
+                <div>
+                    <p>Alision</p>
+                    <small>15 July 2023, 10:00pm</small>
+                </div>
+            </div>
+            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+           </div>
+            <p class="post-text">
+                Subscribe@Alision Youtube channel to watch more videos on website development and UI design. <a href="#">#GreatStack</a> <a href="#">#YoutubeChannel</a>
+            </p>
+            <img src="images/feed-image-1.png" alt="" class="post-img">
+            <div class="post-row">
+                <div class="activity-icons">
+                    <div><img src="images/like-blue.png" alt="">500</div>
+                    <div><img src="images/comments.png" alt="">241</div>
+                    <div><img src="images/share.png" alt="">183</div>
+                </div>
+                <div class="post-profile-icon">
+                    <img src="images/profile-pic.png" alt=""><i class="fa-solid fa-sort-down"></i> 
+                </div>
+            </div>
+        </div>
+        <div class="post-container">
+            <div class="post-row">
+             <div class="user-profile">
+                 <img src="images/profile-pic.png" alt="">
+                 <div>
+                     <p>Alision</p>
+                     <small>23 April 2023, 7:00pm</small>
+                 </div>
+             </div>
+             <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+            </div>
+             <p class="post-text">
+                The evening is a reminder that every day is a gift.” “The evening sky is a reminder to always look up and find beauty in the world.” “In the evening, I find inspiration in the quiet of the world around me.” “Evenings are for finding peace in the chaos of life.<a href="#">#GreatStack</a> <a href="#">#YoutubeChannel</a>
+             </p>
+             <img src="images/feed-image-2.png" alt="" class="post-img">
+             <div class="post-row">
+                 <div class="activity-icons">
+                     <div><img src="images/like-blue.png" alt="">378</div>
+                     <div><img src="images/comments.png" alt="">377</div>
+                     <div><img src="images/share.png" alt="">193</div>
+                 </div>
+                 <div class="post-profile-icon">
+                     <img src="images/profile-pic.png" alt=""><i class="fa-solid fa-sort-down"></i> 
+                 </div>
+             </div>
+         </div>
+         <div class="post-container">
+            <div class="post-row">
+             <div class="user-profile">
+                 <img src="images/profile-pic.png" alt="">
+                 <div>
+                     <p>Alision</p>
+                     <small>28 March 2023, 4:00pm</small>
+                 </div>
+             </div>
+             <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+            </div>
+             <p class="post-text">
+                “It's not what we have in life, but who we have in our life that matters.” “Life was meant for good friends and great adventures.” “A friend who understands your tears is much more valuable than a lot of friends who only know your smile.”<a href="#">#GreatStack</a> <a href="#">#YoutubeChannel</a>
+             </p>
+             <img src="images/feed-image-3.png" alt="" class="post-img">
+             <div class="post-row">
+                 <div class="activity-icons">
+                     <div><img src="images/like-blue.png" alt="">272</div>
+                     <div><img src="images/comments.png" alt="">163</div>
+                     <div><img src="images/share.png" alt="">173</div>
+                 </div>
+                 <div class="post-profile-icon">
+                     <img src="images/profile-pic.png" alt=""><i class="fa-solid fa-sort-down"></i> 
+                 </div>
+             </div>
+         </div>
+         <div class="post-container">
+            <div class="post-row">
+             <div class="user-profile">
+                 <img src="images/profile-pic.png" alt="">
+                 <div>
+                     <p>Alision</p>
+                     <small>16 Feb 2023, 5:00pm</small>
+                 </div>
+             </div>
+             <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+            </div>
+             <p class="post-text">
+                Work-life balance quotes are words used to encourage satisfaction across work and life. Examples include: “Never get so busy making a living that you forget to make a life.” – Dolly Parton and, “If you don't have time for a break, you definitely need a break!” – Dominique Andersen.<a href="#">#GreatStack</a> <a href="#">#YoutubeChannel</a>
+             </p>
+             <img src="images/feed-image-4.png" alt="" class="post-img">
+             <div class="post-row">
+                 <div class="activity-icons">
+                     <div><img src="images/like-blue.png" alt="">726</div>
+                     <div><img src="images/comments.png" alt="">623</div>
+                     <div><img src="images/share.png" alt="">611</div>
+                 </div>
+                 <div class="post-profile-icon">
+                     <img src="images/profile-pic.png" alt=""><i class="fa-solid fa-sort-down"></i> 
+                 </div>
+             </div>
+         </div>
+         <div class="post-container">
+            <div class="post-row">
+             <div class="user-profile">
+                 <img src="images/profile-pic.png" alt="">
+                 <div>
+                     <p>Alision</p>
+                     <small>19 Jan 2023, 5:00pm</small>
+                 </div>
+             </div>
+             <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+            </div>
+             <p class="post-text">
+                The meeting should consider every individual involved in it. Discuss at a peace that is suitable for everybody and clear out doubts of the mind at the end of it.The people who want success should have the capacity to listen to the ides that are of benefit and carry on till the end.<a href="#">#GreatStack</a> <a href="#">#YoutubeChannel</a>
+             </p>
+             <img src="images/feed-image-5.png" alt="" class="post-img">
+             <div class="post-row">
+                 <div class="activity-icons">
+                     <div><img src="images/like-blue.png" alt="">127</div>
+                     <div><img src="images/comments.png" alt="">183</div>
+                     <div><img src="images/share.png" alt="">183</div>
+                 </div>
+                 <div class="post-profile-icon">
+                     <img src="images/profile-pic.png" alt=""><i class="fa-solid fa-sort-down"></i> 
+                 </div>
+             </div>
+         </div>
+         <button type="button" class="load-more-btn">Load More</button>
+    </div>
+    <div class="right-sidebar">
+        <div class="sidebar-title">
+            <h4>Events</h4>
+            <a href="#">See all</a>
+        </div>
+        <div class="event">
+           <div class="left-event">
+                <h3>18</h3>
+                <span>March</span>
+           </div>
+           <div class="right-event">
+            <h4>Social Media</h4>
+            <p>Willson tech Park</p>
+            <a href="#">More Info</a>
+           </div>
+        </div>
+        <div class="event">
+            <div class="left-event">
+                 <h3>12</h3>
+                 <span>April</span>
+            </div>
+            <div class="right-event">
+             <h4>Mobile Marketing</h4>
+             <p>Kalam park</p>
+             <a href="#">More Info</a>
+            </div>
+         </div>
+         <div class="sidebar-title">
+            <h4>Advertisements</h4>
+            <a href="#">Close</a>
+        </div>
+        <img src="images/advertisement.png" alt="" class="sidebar-ads">
+        <div class="sidebar-title">
+            <h4>Conversation</h4>
+            <a href="#">Hide Chat</a>
+        </div>
+        <div class="online-list">
+            <div class="online">
+                <img src="images/member-1.png" alt="">
+            </div>
+            <p>Marry</p>
+        </div>
+        <div class="online-list">
+            <div class="online">
+                <img src="images/member-2.png" alt="">
+            </div>
+            <p>Alision</p>
+        </div>
+        <div class="online-list">
+            <div class="online">
+                <img src="images/member-3.png" alt="">
+            </div>
+            <p>Margrate</p>
+        </div>
+    </div>
+   </div>
+   <div class="footer">
+    <p>Copyright 2023-Rudra Pratap Private Limited</p>
+   </div>
+   <script src="script.js"></script>
+</body>
+</html>
